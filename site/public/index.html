@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>IATI Tables</title>
     <link
       href="https://cdn.jsdelivr.net/npm/iati-design-system@3.5.0/dist/css/iati.min.css"
       rel="stylesheet"
@@ -89,6 +89,13 @@
       <div class="iati-header__container iati-brand-background__content">
         <div class="iati-header__actions">
 
+          <div class="iati-country-switcher">
+            <label for="iati-country-switcher" class="iati-country-switcher__label">Choose your language</label>
+            <select id="iati-country-switcher" class="iati-country-switcher__control">
+              <option>English</option>
+            </select>
+          </div>
+
           <a href="https://iati-tables.readthedocs.io/">
             <button class="iati-button iati-button--light hide--mobile-nav">
               <span>Help Docs</span>
@@ -100,14 +107,14 @@
 
   <div class="iati-header-title">
     <p class="iati-header-title__eyebrow">IATI Tools</p>
-    <p class="iati-header-title__heading">Tables</p>
+    <p class="iati-header-title__heading">IATI Tables</p>
   </div>
 
         <div class="iati-header__nav">
 
   <nav>
     <ul class="iati-tool-nav">
-      <li><a href="#" class="iati-tool-nav-link">Tables</a></li>
+      <li><a href="#" class="iati-tool-nav-link">IATI Tables</a></li>
     </ul>
   </nav>
 
@@ -139,31 +146,6 @@
           </div>
         </div>
         <div class="iati-footer-block">
-            <h2 class="iati-footer-block__title iati-footer-block__title--centered">
-              Sign Up to Our Newsletter
-            </h2>
-            <div class="iati-footer-block__content">
-              <form class="iati-newsletter-form">
-                <div class="iati-newsletter-form__item">
-                  <label for="newsletter-email" class="iati-newsletter-form__label">Email</label>
-                  <input id="newsletter-email" type="text" class="iati-newsletter-form__input">
-                </div>
-                <div class="iati-newsletter-form__item">
-                  <label for="newsletter-firstname" class="iati-newsletter-form__label">First name</label>
-                  <input id="newsletter-firstname" type="text" class="iati-newsletter-form__input">
-                </div>
-                <div class="iati-newsletter-form__item">
-                  <label for="newsletter-surname" class="iati-newsletter-form__label">Surname</label>
-                  <input id="newsletter-surname" type="text" class="iati-newsletter-form__input">
-                </div>
-                <div class="iati-newsletter-form__item">
-                  <button class="iati-newsletter-form__submit iati-button iati-button--submit">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -179,7 +161,6 @@
         <label for="iati-country-switcher" class="iati-country-switcher__label">Choose your language</label>
         <select id="iati-country-switcher" class="iati-country-switcher__control">
           <option>English</option>
-          <option>French</option>
         </select>
       </div>
 
